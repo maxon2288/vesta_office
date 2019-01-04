@@ -1,0 +1,117 @@
+.popup{
+    position: fixed;    
+    width: 100%;
+    transition: 0.3s;
+    text-align: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    overflow-y: auto;
+    overflow-x: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    &__container {
+        max-width: 715px;
+        width: 100%;
+    }
+    &-content {
+        position: relative;
+        background-color: #edf2f6; 
+        border-radius: 4px;
+        margin: 100px 0;
+    }
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+        transform:scale(1);
+    }
+    &__block{
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &.white {
+            background-color: #fff;
+        }
+    }
+    &__close{
+        position: absolute;
+        top: -33px;
+        right: -33px;
+        cursor: pointer;
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+    .m-button{
+        max-width: 275px;
+        height: 55px; 
+        margin: 10px 0;
+    }
+    &__delete-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    &__top{
+        &-title {
+            font-size: 20px;
+            font-weight: "ral";
+            color: #1f2942;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        &-desc {
+            color: #96a7b5;
+            font-size: 12px;
+            font-family:  "ral";
+        }
+    }
+    &__desc{
+        color:  #434343;
+        font-weight: 500;
+        font-family: "ral";
+        margin-bottom: 10px;
+        span {
+            color: #000;
+            line-height: 2;
+            font-weight: bold;
+        }
+    }
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 90;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    transform-origin: 0 0;
+    &.visible {
+        visibility: visible;
+        opacity: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

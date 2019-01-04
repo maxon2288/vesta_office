@@ -1,0 +1,28 @@
+/* Your custom fonts here 
+ *  @include font-face("ProximaNova", "../fonts/proximanova/proximanovat-thin", 100, normal);
+ *  @include font-face("ProximaNova", "../fonts/proximanova/proximanova-thinit", 100, italic);
+ */
+
+
+@include font-face("ral", "../fonts/raleway/raleway-extrabold", 900, normal);
+
+@include font-face("ral", "../fonts/raleway/raleway-semibold", 500, normal);
+
+@include font-face("ral", "../fonts/raleway/raleway-bold", 700, normal);
+
+@include font-face("ral", "../fonts/raleway/raleway-regular", 400, normal);
+
+@include font-face("ral", "../fonts/raleway/raleway-black", 900, normal);
+
+@include font-face("ral", "../fonts/raleway/raleway-italic", 400, italic);
+
+
+
+
+@include font-face("got", "../fonts/gothic/centurygothic-bold", 700, normal);
+
+@include font-face("got", "../fonts/gothic/centurygothic-bolditalic", 700, italic);
+
+@include font-face("got", "../fonts/gothic/centurygothic-italic", 400, italic);
+
+@include font-face("got", "../fonts/gothic/centurygothic", 400, normal);

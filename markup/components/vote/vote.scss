@@ -1,0 +1,47 @@
+.vote {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 100%;
+    &__line {
+        height: 20px;
+        width: 100%;
+        margin-right: 10px;
+    }
+    &__items {
+        margin-top: 10px;
+    }
+    &__item {
+        display: flex;
+        width: 100%;
+        margin-bottom: 6px; 
+        &:nth-child(3n + 1) {
+            .vote__line {
+                background-color: #204b99;
+            }
+        }
+        &:nth-child(3n + 2) {
+            .vote__line {
+                background-color: #a2c4e9;
+            }
+        }
+        &:nth-child(3n  + 3) {
+            .vote__line {
+                background-color: #d7e1ec;
+            }
+        }
+    }
+    &__text {
+        width: 145px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        font-weight: bold;
+        span {
+            color: #949eaa;
+            display: block;
+            font-family: "got";
+        }
+    }
+}

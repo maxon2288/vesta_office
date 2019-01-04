@@ -1,0 +1,47 @@
+.pag-prev, .pag-next{
+    border-radius: 50%;
+    background-color: rgb(227, 30, 37);
+    box-shadow: 0px 0px 6.58px 0.42px rgba(112, 112, 112, 0.4);
+    width: 35px;
+    bottom: 5px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        background-color: rgb(190, 18, 24);
+    }
+}
+
+.pag {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: "got";
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        margin: 0 5px;
+        color: #353535;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 2px 8px;
+        &.active {
+             border-radius: 100px;
+             background-color: #dde5f0;
+        }
+    }
+    &-prev {
+        margin-right: 15px;
+    }
+    &-next {
+        margin-left: 15px;
+    }
+}

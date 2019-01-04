@@ -1,0 +1,30 @@
+<div class="dark">
+                    <div class="stats">
+
+                        <div class="stats__item">
+                            <div class="stats__text">
+                                    Людей в кооперативе
+                            </div>
+                            <div class="stats__info">
+                                    456
+                            </div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__text">
+                                    Выдано квартир
+                            </div>
+                            <div class="stats__info">
+                                456
+                            </div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__text">
+                                    В паевом фонде
+                            </div>
+                            <div class="stats__info">
+                                    39 351 077  тг
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
